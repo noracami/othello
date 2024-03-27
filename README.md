@@ -40,7 +40,7 @@ This is a simple project implementing a game room with a game of Othello (Revers
 
 ## Development Schedule
 
-- [ ] Setup CI/CD (On zeabur)
+- [x] Setup CI/CD (On zeabur)
 - [ ] POC for noticed gem
 - [ ] Design API schema
 - [ ] Design Models
