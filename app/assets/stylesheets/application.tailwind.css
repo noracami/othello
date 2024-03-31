@@ -11,3 +11,9 @@
 }
 
 */
+
+@layer components {
+  .x-w-full {
+    @apply relative left-1/2 right-1/2 w-dvw ml-[-50vw] mr-[-50vw];
+  }
+}
