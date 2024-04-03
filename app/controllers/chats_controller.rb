@@ -70,13 +70,4 @@ class ChatsController < ApplicationController
   def chat_params
     params.require(:chat).permit(:chat_type, :name)
   end
-
-  def mock_is_not_logged_in?
-    session[:expires_at].nil? || session[:expires_at] < Time.current || session[:user_id].nil?
-  end
-
-  def mock_login
-    session[:expires_at] = Time.current + 1.minute.to_i
-    session[:user_id] = SecureRandom.uuid
-  end
 end

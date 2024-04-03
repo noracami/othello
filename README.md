@@ -1,20 +1,21 @@
 # README
 
-This is a simple project implementing a game room with a game of Othello (Reversi) in it. The project is created to practice with the gem [noticed](https://github.com/excid3/noticed).
+This is a simple project implementing a game room with a game of Othello (Reversi) in it.
 
 ## TechStack
 
 - Ruby 3.3.0
 - Rails 7.1.0
-- noticed (the project purpose)
 - PostgreSQL
 - Redis (for ActionCable)
 
 ## Milestones
 
-- [ ] v1 poc for integration with noticed gem
-  - [ ] can notify the player in real-time
-  - [ ] the page can react to the notification in real-time
+- [ ] v1 use ActionCable for real-time updates
+  - [ ] Test if 2 clients can see the same message at the same time
+  - [ ] Determine how client (player) interacts with the server
+    - [ ] By RESTful API
+    - [ ] By ActionCable (Websocket)
 - [ ] v2 game ends when one player surrenders
   - [ ] Create a new room
   - [ ] Enter the game
@@ -33,7 +34,6 @@ This is a simple project implementing a game room with a game of Othello (Revers
 ## Development plan
 
 - [x] Setup CI/CD (On zeabur)
-- [ ] POC for integrating noticed gem
 - [ ] Design API schema
 - [ ] Design Models
 - [ ] To be continued...
