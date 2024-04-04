@@ -1,0 +1,13 @@
+<div class="bg-slate-300 absolute w-60 left-0 top-0 bottom-0">
+  <div class="w-full mt-28 pl-5">
+    <h1 class="text-2xl font-bold text-white">Subscribers</h1>
+    <div class="mt-5">
+      <% subscribers = $redis.hgetall("chat:room:channel:users") || [] %>
+      <% subscribers.each do |thing| %>
+        <p>
+          <%= thing %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>

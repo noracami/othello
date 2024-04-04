@@ -14,7 +14,7 @@ module ApplicationCable
     protected
 
     def find_verified_user
-      if (current_user = cookies.encrypted['_othello_session']['user_id'])
+      if (current_user = cookies.encrypted['_othello_session']&.dig('user_id'))
         current_user
       else
         :anonymous
