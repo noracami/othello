@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "chats#show", id: Chat.first.id
+
+  get "ask-zeabur-vars" => "home#ask_zeabur_vars", as: :ask_zeabur_vars
 end
